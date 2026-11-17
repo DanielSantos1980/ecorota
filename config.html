@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoRota — Configuração</title>
+  <style>
+    body {font-family:Arial,sans-serif;line-height:1.5;background:#f5f7f5;color:#1e3326;margin:0;padding:28px}
+    main {max-width:640px;margin:0 auto;padding:26px;background:white;border:1px solid #dce6de;border-radius:12px}
+    h1 {margin-top:0} label {font-weight:600;display:block;margin-top:16px}
+    input,textarea {display:block;width:100%;box-sizing:border-box;padding:10px;border:1px solid #a7b5a9;border-radius:6px;font:inherit}
+    textarea {min-height:85px} small {display:block;color:#53685b;margin-top:4px}
+  </style>
+</head>
+<body>
+<main>
+  <h1>EcoRota — Observação Ambiental</h1>
+  <p>Parâmetros da atividade a definir pelo professor na Inven!RA.</p>
+  <!-- A plataforma recolhe estes campos pelo respetivo atributo name. -->
+  <form id="configuracao-ecorota">
+  <label for="tema">Tema</label>
+  <input type="text" id="tema" name="tema" value="Sustentabilidade no espaço escolar">
+  <label for="instrucoes">Instruções</label>
+  <textarea id="instrucoes" name="instrucoes">Registar observações ambientais e escrever uma reflexão final.</textarea>
+  <label for="categorias">Categorias</label>
+  <input type="text" id="categorias" name="categorias" value="residuos,reciclagem,espacos_verdes">
+  <small>Separar as categorias por vírgulas.</small>
+  <label for="minimo_observacoes">Número mínimo de observações</label>
+  <input type="number" id="minimo_observacoes" name="minimo_observacoes" min="1" value="3">
+  <small>A aplicação validará este campo como um inteiro positivo na fase de execução.</small>
+  </form>
+</main>
+</body>
+</html>
