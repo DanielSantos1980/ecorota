@@ -12,7 +12,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse
 
 app = FastAPI(title="EcoRota - Integração Inven!RA", version="0.1.0")
-TEMPLATES = Path(__file__).resolve().parent / "templates"
+TEMPLATES = Path(__file__).resolve().parent
 
 
 def base_publica(request: Request) -> str:
